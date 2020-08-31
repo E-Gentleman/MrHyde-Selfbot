@@ -1,7 +1,8 @@
 # Mr. Hyde - Selfbot
 I don't take any responsibility for Discord accounts that use this bot neither the use you make of its features.
 ## Introduction
-**The bot is still WIP**
+**The bot is still WIP** 
+
 Mr. Hyde is a Discord selfbot bringing you some usefull features:
  - **Spy**: track all messages / updates from a list of users (desktop notifications support)
  - **MessageBin**: Store created/edited/deleted messages from users in spy list
