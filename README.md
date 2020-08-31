@@ -12,6 +12,7 @@ Mr. Hyde is a Discord selfbot bringing you some usefull features:
  - MongoDB storage
  - Easy commands and events implementation
  - Desktop notifications
+ - Many more to come
  
  ![preview](https://s8.gifyu.com/images/previewd29705674e361f4a.gif)
  
@@ -22,7 +23,7 @@ Mr. Hyde is a Discord selfbot bringing you some usefull features:
 
 ## How to use
 - Install latest version of [NodeJS](https://nodejs.org/en/download/)
-- Install [MongoDB Comunity Edition](https://www.mongodb.com/try/download/community?tck=docs_server)
+- Install [MongoDB Comunity Edition](https://www.mongodb.com/try/download/community?tck=docs_server) and create a database named `mrhyde`
 - Clone this repository
 - Open cloned folder in a terminal and type `npm i` to download dependencies
 - Open the `config.json` file and add your Discord account token
