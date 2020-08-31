@@ -1,0 +1,18 @@
+{
+  "token": "Your token goes here",
+  "debug": false,
+  "db": {
+    "uri": "mongodb://127.0.0.1/mrhyde"
+  },
+  "modules": {
+    "notifier": {
+      "tagWords": [
+        "words",
+        "that",
+        "will",
+        "notify",
+        "me"
+      ]
+    }
+  }
+}

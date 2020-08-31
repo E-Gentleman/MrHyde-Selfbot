@@ -1,0 +1,19 @@
+{
+  "name": "mr.hide",
+  "version": "1.0.0",
+  "dependencies": {
+    "@erupcja/selfbot-eris": "^0.13.1",
+    "bufferutil": "^4.0.1",
+    "colors": "^1.4.0",
+    "console.table": "^0.10.0",
+    "erlpack": "github:abalabahaha/erlpack",
+    "mongoose": "^5.10.2",
+    "node-notifier": "^8.0.0",
+    "open": "^7.2.1",
+    "utf-8-validate": "^5.0.2",
+    "zlib-sync": "^0.1.7"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
