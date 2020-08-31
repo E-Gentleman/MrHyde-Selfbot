@@ -11,7 +11,7 @@ Mr. Hyde is a Discord selfbot bringing you some usefull features:
  - Easy commands and events implementation
  - Desktop notifications
  
- ![preview]()
+ ![preview](https://s8.gifyu.com/images/previewd29705674e361f4a.gif)
  
 ## FAQ
 **Selfbots are against Discord TOS, is Mr.Hyde  safe ?**
