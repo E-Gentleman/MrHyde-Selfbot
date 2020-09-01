@@ -1,7 +1,17 @@
 const Spied = require('../models/Spied');
 const Message = require('../models/Message');
+const {PrivateChannel} = require('@erupcja/selfbot-eris');
 
 module.exports = async (client, message) => {
+    if(message.channel instanceof PrivateChannel) {
+        if(client.config.modules.dnd.enabled && message.author.id !== client.user.id && !message.author.bot) {
+            client.createMessage(message.channel.id, client.config.modules.dnd.message);
+            client.notifier.notify(`[DM] ${message.author.username}`, message.content, client.utils.message.getUrl(message));
+        }
+
+        return;
+    }
+
     let spied = await Spied.findOne({userId: message.author.id});
 
     if(spied || client.utils.message.mentionsSelf(message) || client.utils.message.mentionsTags(message)) {

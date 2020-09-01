@@ -2,9 +2,9 @@ const fs = require('fs');
 const Eris = require('@erupcja/selfbot-eris');
 const Database = require('./classes/database');
 const MessageUtils = require('./utils/MessageUtils');
+const Config = require('./classes/Config');
 
-const config = require('./config.json');
-
+let config = new Config();
 const client = new Eris(config.token);
 
 (async () => {

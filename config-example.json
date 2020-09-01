@@ -13,6 +13,10 @@
         "notify",
         "me"
       ]
+    },
+    "dnd": {
+      "enabled": false,
+      "message": "I'm not available at the moment"
     }
   }
 }

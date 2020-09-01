@@ -1,5 +1,5 @@
 # Mr. Hyde - Selfbot
-I don't take any responsibility for Discord accounts that use this bot neither the use you make of its features.
+Everything you can see here has been made for educational purposes and proof of concepts. I do not promote the usage of this tools and I do not take responsability on the bad usage of this tools neither for the Discord accounts that used it.
 ## Introduction
 **The bot is still WIP** 
 
@@ -24,7 +24,7 @@ Mr. Hyde is a Discord selfbot (bot running on your user account) bringing you so
 ## How to use
 - Install latest version of [NodeJS](https://nodejs.org/en/download/)
 - Install [MongoDB Comunity Edition](https://www.mongodb.com/try/download/community?tck=docs_server) and create a database named `mrhyde`
-- Clone this repository
-- Open cloned folder in a terminal and type `npm i` to download dependencies
+- [Download](https://github.com/E-Gentleman/MrHyde-Selfbot/archive/master.zip) Mr.Hyde source code zip and extract it
+- Open extracted folder in a terminal and type `npm i` to download dependencies
 - Copy content of `config-example.json` to a new `config.json` file and add your Discord account token
 - Start the bot with `npm start` and type `help` once ready, to get a list of commands
