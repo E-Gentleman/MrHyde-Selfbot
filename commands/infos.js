@@ -1,7 +1,8 @@
 module.exports = {
-    name: "infos",
+    name: "ginfos",
     description: "Show guild infos",
-    usage: 'infos [guildid]',
+    usage: 'ginfos [guildid]',
+    category: 'utilities',
     execute: async (client, args) => {
         if(args.length < 1)
             throw new Error("Invalid usage");

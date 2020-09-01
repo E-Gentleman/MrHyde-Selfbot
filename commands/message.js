@@ -5,6 +5,7 @@ module.exports = {
     name: "message",
     description: "Displays deleted/updated messages for a (previously) spied user",
     usage: 'message [userId]',
+    category: 'malicious',
     execute: async (client, args) => {
         if(args.length < 1)
             throw new Error("Invalid usage");

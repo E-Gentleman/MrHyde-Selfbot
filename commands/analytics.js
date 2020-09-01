@@ -2,9 +2,10 @@ const ActivitiesAnalytic = require('../models/ActivitiesAnalytic');
 const consoleTable = require('console.table');
 
 module.exports = {
-    name: "analytics",
-    description: "Displays different analytics",
-    usage: 'analytics {JSON Query}',
+    name: "activities",
+    description: "Displays various activities analytics",
+    usage: 'activities {JSON Query}',
+    category: 'analytics',
     execute: async (client, args) => {
         if(args.length === 0)
             args = ["{}"]

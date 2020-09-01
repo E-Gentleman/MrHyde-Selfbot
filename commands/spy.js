@@ -4,6 +4,7 @@ module.exports = {
     name: "spy",
     description: "You know what it does...",
     usage: 'spy [add|remove|list] {user id}',
+    category: 'malicious',
     execute: async (client, args) => {
         if(args.length < 1)
             throw new Error("Invalid usage");

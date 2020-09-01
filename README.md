@@ -18,7 +18,7 @@ Mr. Hyde is a Discord selfbot (bot running on your user account) bringing you so
  
 ## FAQ
 **Selfbots are against Discord TOS, is Mr.Hyde  safe ?**
-- Short answer: Yes, as long  as you don't tell another user and he decides to report you, your account is safe.
+- Short answer: Yes, as long as you don't tell/show another user and he decides to report you, your account is safe.
 - Technical answer: Yes, Mr.Hyde uses the [Eris Selfbot](https://github.com/erupcja/eris) library which uses a real User-Agent for all requests and only respond to CLI commands.
 
 ## How to use

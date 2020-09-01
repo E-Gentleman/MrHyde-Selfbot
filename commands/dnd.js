@@ -2,6 +2,7 @@ module.exports = {
     name: "dnd",
     description: "Enable/Disable do not disturb mode or set message",
     usage: 'dnd [on|off|message] {message}',
+    category: 'utilities',
     execute: async (client, args) => {
         if(args.length < 1)
             throw new Error("Invalid usage");
