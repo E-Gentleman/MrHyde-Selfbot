@@ -1,7 +1,9 @@
 # Mr. Hyde - Selfbot
 I don't take any responsibility for Discord accounts that use this bot neither the use you make of its features.
 ## Introduction
-Mr. Hyde is a Discord selfbot bringing you some usefull features:
+**The bot is still WIP** 
+
+Mr. Hyde is a Discord selfbot (bot running on your user account) bringing you some usefull features:
  - **Spy**: track all messages / updates from a list of users (desktop notifications support)
  - **MessageBin**: Store created/edited/deleted messages from users in spy list
  - **Notifier**: Get notified when a message contains certains words
@@ -10,8 +12,9 @@ Mr. Hyde is a Discord selfbot bringing you some usefull features:
  - MongoDB storage
  - Easy commands and events implementation
  - Desktop notifications
+ - Many more to come
  
- ![preview]()
+ ![preview](https://s8.gifyu.com/images/previewd29705674e361f4a.gif)
  
 ## FAQ
 **Selfbots are against Discord TOS, is Mr.Hyde  safe ?**
@@ -20,7 +23,7 @@ Mr. Hyde is a Discord selfbot bringing you some usefull features:
 
 ## How to use
 - Install latest version of [NodeJS](https://nodejs.org/en/download/)
-- Install [MongoDB Comunity Edition](https://www.mongodb.com/try/download/community?tck=docs_server)
+- Install [MongoDB Comunity Edition](https://www.mongodb.com/try/download/community?tck=docs_server) and create a database named `mrhyde`
 - Clone this repository
 - Open cloned folder in a terminal and type `npm i` to download dependencies
 - Open the `config.json` file and add your Discord account token
