@@ -1,11 +1,10 @@
 const Spied = require('../models/Spied');
-const MessageUtils = require('../utils/MessageUtils');
 const Message = require('../models/Message');
 
 module.exports = async (client, message) => {
     let spied = await Spied.findOne({userId: message.author.id});
 
-    if(spied) {
+    if(spied || client.utils.message.mentionsSelf(message) || client.utils.message.mentionsTags(message)) {
         await new Message({
             previousContent: message.content,
             when: Date.now(),
@@ -16,11 +15,6 @@ module.exports = async (client, message) => {
         }).save();
 
         client.logger.log(`Stored new message from ${message.author.username}`);
-        return client.notifier.notify(message.author.username, message.content, MessageUtils.getUrl(message));
-    }
-
-    for(const tag of client.config.modules.notifier.tagWords) {
-        if(message.content.includes(tag))
-            return client.notifier.notify(message.author.username, message.content, MessageUtils.getUrl(message));
+        return client.notifier.notify(message.author.username, message.content, client.utils.message.getUrl(message));
     }
 }

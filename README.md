@@ -5,7 +5,7 @@ I don't take any responsibility for Discord accounts that use this bot neither t
 
 Mr. Hyde is a Discord selfbot (bot running on your user account) bringing you some usefull features:
  - **Spy**: track all messages / updates from a list of users (desktop notifications support)
- - **MessageBin**: Store created/edited/deleted messages from users in spy list
+ - **MessageBin**: Store created/edited/deleted messages from mentions and users in spy list
  - **Notifier**: Get notified when a message contains certains words
  - **[WIP] Analytics**: store all presence activities and related players for your own analytics purposes
  - **[WIP] Infos**: get a guild infos and what you're allowed to perform on it
@@ -19,12 +19,12 @@ Mr. Hyde is a Discord selfbot (bot running on your user account) bringing you so
 ## FAQ
 **Selfbots are against Discord TOS, is Mr.Hyde  safe ?**
 - Short answer: Yes, as long  as you don't tell another user and he decides to report you, your account is safe.
-- Technical answer: Yes, Mr.Hyde uses the [Eris Selfbot](https://github.com/erupcja/eris) library which uses a real User-Agent for all requests
+- Technical answer: Yes, Mr.Hyde uses the [Eris Selfbot](https://github.com/erupcja/eris) library which uses a real User-Agent for all requests and only respond to CLI commands.
 
 ## How to use
 - Install latest version of [NodeJS](https://nodejs.org/en/download/)
 - Install [MongoDB Comunity Edition](https://www.mongodb.com/try/download/community?tck=docs_server) and create a database named `mrhyde`
 - Clone this repository
 - Open cloned folder in a terminal and type `npm i` to download dependencies
-- Open the `config.json` file and add your Discord account token
+- Copy content of `config-example.json` to a new `config.json` file and add your Discord account token
 - Start the bot with `npm start` and type `help` once ready, to get a list of commands

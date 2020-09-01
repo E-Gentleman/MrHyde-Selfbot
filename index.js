@@ -1,6 +1,8 @@
 const fs = require('fs');
 const Eris = require('@erupcja/selfbot-eris');
 const Database = require('./classes/database');
+const MessageUtils = require('./utils/MessageUtils');
+
 const config = require('./config.json');
 
 const client = new Eris(config.token);
@@ -8,6 +10,9 @@ const client = new Eris(config.token);
 (async () => {
     client.config = config;
     client.logger = require('./classes/Logger');
+    client.utils = {
+        message: new MessageUtils(client)
+    }
 
     client.logger.info("*Waking up*");
 

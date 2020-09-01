@@ -7,7 +7,7 @@ module.exports = async (client, message, oldMessage) => {
 
     let spied = await Spied.findOne({userId: message.author.id});
 
-    if(spied) {
+    if(spied || client.utils.message.mentionsSelf(message) || client.utils.message.mentionsTags(message)) {
         await new Message({
             previousContent: oldMessage.content,
             when: Date.now(),

@@ -11,7 +11,7 @@ class Notifier {
             title,
             message,
             sound: false,
-            icon: path.join(__dirname, '/../img/spy.png'),
+            icon: path.join(__dirname, '/../assets/spy.png'),
             wait: true
         }, (error, response) => {
             if(response === "activate" && url)
