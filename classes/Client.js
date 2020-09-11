@@ -1,5 +1,6 @@
 const Eris = require('@erupcja/selfbot-eris');
 const fs = require('fs');
+const Requester = require('../utils/Requester');
 
 const Config = require('./Config');
 const Logger = require('./Logger');
@@ -26,9 +27,27 @@ class Client {
         this.loadEvents();
 
         await new Database(this._client).connect();
+        await this.checkVersion();
 
         this._client.logger.info("Logging in...");
         this._client.connect().catch(console.error);
+    }
+
+    async checkVersion() {
+        this._client.logger.log("Checking for updates...");
+        const current = require('../version.json').version;
+
+        try {
+            const latest = await Requester.request(
+                "https://raw.githubusercontent.com/E-Gentleman/MrHyde-Selfbot/master/version.json",
+                'GET'
+            );
+
+            if(current < latest.version)
+                return this._client.logger.info(`A new Mr.Hyde version (v${latest.version}) is available at https://github.com/E-Gentleman/MrHyde-Selfbot`);
+
+            this._client.logger.log("Already up to date.");
+        } catch (e) {}
     }
 
     loadUtils() {
