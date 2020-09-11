@@ -16,14 +16,7 @@ class Logger {
     }
 
     static log(message) {
-        console.log(`${prefix} ${this.secure(message)}`);
-    }
-
-    static secure(message) {
-        if(message.indexOf('token') > -1)
-            return `${message.split(':')[0]}: (hidden)`;
-
-        return message;
+        console.log(`${prefix} ${message}`);
     }
 }
 
