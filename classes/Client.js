@@ -14,12 +14,14 @@ class Client {
 
         this._client = new Eris(config.token);
         this._client.config = config;
-        this._client.logger = Logger;
+        this._client.logger = new Logger(config.verbose);
         this._client.notifier = Notifier;
         this._client.commands = new Map();
     }
 
     async bootstrap() {
+        this._client.logger.initializeLogFile();
+
         this._client.logger.info("*Waking up*");
 
         this.loadUtils();

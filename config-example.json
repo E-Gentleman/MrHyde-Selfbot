@@ -1,6 +1,6 @@
 {
   "token": "Your token goes here",
-  "debug": false,
+  "verbose": false,
   "db": {
     "uri": "mongodb://127.0.0.1/mrhyde"
   },
