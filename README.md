@@ -3,7 +3,7 @@ Everything you can see here has been made for educational purposes and proof of 
 
 ## Summary
 [Introduction](https://github.com/E-Gentleman/MrHyde-Selfbot#introduction)  
-[Commands](https://github.com/E-Gentleman/MrHyde-Selfbot#commands)  
+[Commands](https://github.com/E-Gentleman/MrHyde-Selfbot/tree/master/commands)  
 [How to install](https://github.com/E-Gentleman/MrHyde-Selfbot#how-to-install)  
 [FAQ](https://github.com/E-Gentleman/MrHyde-Selfbot#faq)
 
