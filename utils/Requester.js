@@ -26,10 +26,11 @@ class Requester {
 
         let res = await nodeFetch(url, options);
 
-        if(res.size > 0)
+        try {
             return await res.json();
-
-        return {};
+        } catch (e) {
+            return {}
+        }
     }
 }
 
