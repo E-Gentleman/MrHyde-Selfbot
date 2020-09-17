@@ -1,5 +1,5 @@
 # Mr. Hyde - Selfbot
-Everything you can see here has been made for educational purposes and proof of concepts. I do not promote the usage of this tools and I do not take responsability on the bad usage of this tools neither for the Discord accounts that used it.
+Everything you can see here has been made for educational purposes and proof of concepts. I do not promote the usage of these tools and do not take any responsability on the bad usage of these tools nor for the Discord accounts that used it.
 
 ## Summary
 [Introduction](https://github.com/E-Gentleman/MrHyde-Selfbot#introduction)  
